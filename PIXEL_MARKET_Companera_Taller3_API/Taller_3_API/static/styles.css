@@ -1,0 +1,22 @@
+/* ARCHIVO DIDACTICO: cada regla se explica tambien en la guia de codigo. */
+/* Tema tecnologico oscuro de PIXEL MARKET. Variables faciles de personalizar. */
+:root { --fondo:#130f18; --panel:#261c2a; --borde:#493344; --texto:#fff3e6; --suave:#c7b5b2; --acento:#ffb454; }
+/* Tipografia legible, espaciado generoso y fondo con brillos sutiles. */
+body { color:var(--texto); background:radial-gradient(ellipse at 82% 9%,#493043 0,transparent 31%), var(--fondo); font-family:system-ui,-apple-system,"Segoe UI",sans-serif; }
+/* Logotipo de dos tonos. */
+.brand { font-weight:900;letter-spacing:.09em; }.brand span { color:var(--acento); }
+/* Hero responsivo que evita textos demasiado largos. */
+.hero { min-height:420px; } h1 { font-size:clamp(2.8rem,6vw,5rem);font-weight:850;line-height:1.06;letter-spacing:-.055em; } h1 em { color:var(--acento);font-style:normal; } h2 {font-weight:800;} h3 {font-weight:700;font-size:1.2rem;}
+/* Texto secundario con buen contraste. */
+.muted,.feature p,small {color:var(--suave);} .eyebrow,.mini-title {color:var(--acento);font-size:.8rem;font-weight:800;letter-spacing:.18em;}
+/* Botones con identidad azul turquesa. */
+.btn-primary {background:var(--acento);border-color:var(--acento);color:#24161c;font-weight:700;} .btn-primary:hover {background:#ffd992;border-color:#ffd992;color:#24161c;}
+/* Tarjetas para los tres recursos principales del API. */
+.feature {background:linear-gradient(145deg,rgba(23,44,69,.94),rgba(10,21,37,.96));border:1px solid var(--borde);border-radius:22px;box-shadow:0 12px 42px rgba(0,0,0,.13);}
+.feature a {color:var(--acento);text-decoration:none;font-weight:600;} .feature a:hover {text-decoration:underline;}.feature .btn {color:var(--acento);} .symbol {display:inline-block;color:var(--acento);margin-bottom:1rem;font-size:.9rem;letter-spacing:.18em;font-weight:700;}
+/* Indicadores y detalle del estado en tiempo real. */
+.metric {font-size:3.2rem;font-weight:850;letter-spacing:-.05em;} .status {font-weight:700;font-size:1.3rem;margin-top:1rem;} .dot {display:inline-block;width:10px;height:10px;background:#26d99a;border-radius:50%;margin-right:8px;box-shadow:0 0 0 5px rgba(38,217,154,.12);}
+/* Presentacion elegante del ejemplo de endpoint. */
+code {color:#8cddfa;word-break:break-word;} hr {border-color:var(--borde);opacity:1;margin:1.6rem 0;}
+/* Accesibilidad y ajustes para pantallas estrechas. */
+@media(max-width:576px){.hero{min-height:auto;}.feature{border-radius:16px;}h1{font-size:2.8rem;}}

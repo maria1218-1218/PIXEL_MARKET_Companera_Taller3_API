@@ -1,0 +1,12 @@
+# ARCHIVO DIDACTICO: consulta la guia de linea por linea.
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      DATABASE_URL: sqlite:////app/data/videojuegos.db
+    volumes:
+      - tienda_datos:/app/data
+volumes:
+  tienda_datos:
